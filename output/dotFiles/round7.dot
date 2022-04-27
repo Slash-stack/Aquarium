@@ -1,0 +1,35 @@
+strict digraph G {
+  Nemo;
+  Aude;
+  Emma;
+  Manon;
+  Charlotte;
+  Charlotte;
+  Iris;
+  Helene;
+  Thiery;
+  Veronique;
+  Agathe;
+  Ambre;
+  Iven;
+  Julie;
+  Soukaina;
+  Louis;
+  Lou;
+  Stephane;
+  Emma;
+  Zoe;
+  Aude;
+  Lalie;
+  Lalie;
+  Juliette;
+  Stephane;
+  Zoe;
+  Aude;
+  Nemo -> Aude;
+  Thiery -> Helene;
+  Iven -> Ambre;
+  Louis -> Soukaina;
+  Stephane -> Zoe;
+  Stephane -> Lalie;
+}

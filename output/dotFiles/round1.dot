@@ -1,0 +1,20 @@
+strict digraph G {
+  Nemo;
+  Manon;
+  Thiery;
+  Charlotte;
+  Iven;
+  Julie;
+  Louis;
+  Julie;
+  Stephane;
+  Aude;
+  Stephane;
+  Pauline;
+  Nemo -> Manon;
+  Thiery -> Charlotte;
+  Iven -> Julie;
+  Louis -> Julie;
+  Stephane -> Aude;
+  Stephane -> Pauline;
+}
