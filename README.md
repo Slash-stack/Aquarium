@@ -1,7 +1,7 @@
 # Aquarium
 Simulation de la vie marine dans le cadre du projet de spécialité de 2ème année
 
-##Description de notre aquarium :
+## Description de notre aquarium :
 Dans notre jeu de simulation, il y a deux agents dénomés êtres vivants dans le reste du document : des algues et des poissons. Ces êtres vivants sont dotés d'un identifiant généré aléatoirement nous permettant de traquer chacun d'eux aini qu'un nombre de points de vie et un age.
 
 Ces êtres vivants ont bien evidemment un état évolutif qui change en fonction du temps. Ils ont donc la malchance de pouvoir vieillir à chaque tour et doivent notamment manger tout en prenant le risque de se faire manger. Ils ont également la possibilité de se reproduire selon certaines règles.\\
@@ -21,10 +21,10 @@ Les poissons (Fish) :
 
 Dans le cadre de notre jeu, les êtres vivants naissent à l'âge 0 et ceux qui ont plus de 20 tours meurent de vieillesse.
 
-#TODO : ajouter la figure sur le régime alimentaire des poissons
+# TODO : ajouter la figure sur le régime alimentaire des poissons
 
 
-##Reproduction :
+## Reproduction :
 
 Un poisson qui n'a pas faim va aller voir un autre poisson (au hasard). Si ce poisson est de même race et de sexe opposé, les deux poissons se reproduisent et donnent naissance à un troisième poisson, de même race et de sexe aléatoire. Il n'a qu'un seul essai par tour et les conflits sont réglés selon le jeu des enchères à temps aléatoire.
 Mais, biensur la séxualité chez les poissons n'est pas si simple que ça  parce qu'ils ne sont pas simplement "mâle" ou "femelle".
@@ -36,12 +36,12 @@ On distingue :
 
 Ce qui nous donne la figure suivante :
 
-#TODO : ajouter la figure sur la sexualité des poissons
+# TODO : ajouter la figure sur la sexualité des poissons
 
 En ce qui concerne les enchères pour la reproduction, lors d'un conflit entre 2 mâles par exemple pour une femelle, les poissons s'engagent dans un duel dont la durée est déterminée à l'avance par les deux poissons selon la loi Gaussienne dont les paramètres dépendent de l'âge des poissons et de leurs points de vie. Le poisson ayant tiré le plus grand nombre gagne ainsi le droit de se reproduire avec la cible. Cela représente ainsi la valeur donné par chacun des poissons à la cible en prenant en compte par exemple le fait qu'un vieux poisson tient beaucoup plus à se reproduire qu'un jeune mais aussi le fait qu'un poisson en bonne santé a plus de chance de se reproduire. Bien évidemment, d'un autre côté, les poissons n'ont pas forcément envie de se reproduire avec un poisson faible et/ou vieux et lui donneront ainsi une valeur plus faible.
 
-##Résultats :
+## Résultats :
 
 Pour un aquarium avec une population de 12 poissons au tour 0 (un mâle et une femelle de chaque espece), nous avons pu enregistrer le nombre d'enchères suivantes :
 
-#TODO : ajouter les graphics
+# TODO : ajouter les graphics
