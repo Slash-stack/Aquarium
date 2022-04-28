@@ -49,3 +49,9 @@ En ce qui concerne les enchères pour la reproduction, lors d'un conflit entre 2
 Pour un aquarium avec une population de 12 poissons au tour 0 (un mâle et une femelle de chaque espece), nous avons pu enregistrer le nombre d'enchères suivantes :
 
 # TODO : ajouter les graphics
+
+On peut constater l'évolution suivante de la population :
+
+<p align="center">
+  <img src="figures/population.png" width="350" title="population">
+</p>
