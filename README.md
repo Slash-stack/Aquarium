@@ -16,12 +16,12 @@ Les poissons (Fish) :
 - Perdent 1 HP à la fin de chaque tour;
 - Perdent 4 HP s'ils se font mordre par un autre poisson carnivore;
 - Doit manger s'il a suffisamment faim (5 HP ou moins). Les herbivores n'ont pas trop de problème, mais les algues ne sont pas très nourrissantes : +3 HP. Les carnivores mangent de la bonne viande de poisson, qui fait gagner +5 HP. Un carnivore attaque chaque tour un poisson au hasard : il n'a qu'une seule chance. Hélas pour lui, il ne peut ni se manger lui-même, ni manger un poisson de son espèce. Le tableau des régimes alimentaires selon l'espece est donné dans \ref{fig:regime}.
-- Se reproduit selon certaines règles qui seront détaillées dans la section suivante.\\
+- Se reproduit selon certaines règles qui seront détaillées dans la section suivante.
 
 
 Dans le cadre de notre jeu, les êtres vivants naissent à l'âge 0 et ceux qui ont plus de 20 tours meurent de vieillesse.
 
-# TODO : ajouter la figure sur le régime alimentaire des poissons
+![Regime](figures/regime.png)
 
 
 ## Reproduction :
@@ -36,7 +36,7 @@ On distingue :
 
 Ce qui nous donne la figure suivante :
 
-# TODO : ajouter la figure sur la sexualité des poissons
+![Sexualite](figures/sexualite.png)
 
 En ce qui concerne les enchères pour la reproduction, lors d'un conflit entre 2 mâles par exemple pour une femelle, les poissons s'engagent dans un duel dont la durée est déterminée à l'avance par les deux poissons selon la loi Gaussienne dont les paramètres dépendent de l'âge des poissons et de leurs points de vie. Le poisson ayant tiré le plus grand nombre gagne ainsi le droit de se reproduire avec la cible. Cela représente ainsi la valeur donné par chacun des poissons à la cible en prenant en compte par exemple le fait qu'un vieux poisson tient beaucoup plus à se reproduire qu'un jeune mais aussi le fait qu'un poisson en bonne santé a plus de chance de se reproduire. Bien évidemment, d'un autre côté, les poissons n'ont pas forcément envie de se reproduire avec un poisson faible et/ou vieux et lui donneront ainsi une valeur plus faible.
 
