@@ -53,5 +53,5 @@ Pour un aquarium avec une population de 12 poissons au tour 0 (un mâle et une f
 On peut constater l'évolution suivante de la population :
 
 <p align="center">
-  <img src="figures/population.png" width="350" title="population">
+  <img src="figures/population.png" width="500" title="population">
 </p>
