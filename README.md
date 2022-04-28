@@ -21,7 +21,9 @@ Les poissons (Fish) :
 
 Dans le cadre de notre jeu, les êtres vivants naissent à l'âge 0 et ceux qui ont plus de 20 tours meurent de vieillesse.
 
-![Regime](figures/regime.png)
+<p align="center">
+  <img src="figures/regime.png" width="350" title="hover text">
+</p>
 
 
 ## Reproduction :
@@ -36,7 +38,9 @@ On distingue :
 
 Ce qui nous donne la figure suivante :
 
-![Sexualite](figures/sexualite.png)
+<p align="center">
+  <img src="figures/sexualite.png" width="350" title="hover text">
+</p>
 
 En ce qui concerne les enchères pour la reproduction, lors d'un conflit entre 2 mâles par exemple pour une femelle, les poissons s'engagent dans un duel dont la durée est déterminée à l'avance par les deux poissons selon la loi Gaussienne dont les paramètres dépendent de l'âge des poissons et de leurs points de vie. Le poisson ayant tiré le plus grand nombre gagne ainsi le droit de se reproduire avec la cible. Cela représente ainsi la valeur donné par chacun des poissons à la cible en prenant en compte par exemple le fait qu'un vieux poisson tient beaucoup plus à se reproduire qu'un jeune mais aussi le fait qu'un poisson en bonne santé a plus de chance de se reproduire. Bien évidemment, d'un autre côté, les poissons n'ont pas forcément envie de se reproduire avec un poisson faible et/ou vieux et lui donneront ainsi une valeur plus faible.
 
