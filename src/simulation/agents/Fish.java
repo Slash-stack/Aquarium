@@ -208,7 +208,7 @@ public class Fish extends LivingCreature{
     }
 
     public double getBet() {
-        return (random.nextGaussian() + this.getLifePoints()) * this.getAge();
+        return (random.nextGaussian() + this.getLifePoints()) * 1/this.getAge();
     }
 
     @Override
