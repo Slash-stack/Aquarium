@@ -1,20 +1,20 @@
 strict digraph G {
+  Rose;
+  Guillaume;
+  Yves;
+  Ines;
+  Soukaina;
   Nemo;
-  Manon;
-  Thiery;
-  Charlotte;
-  Iven;
-  Julie;
-  Louis;
-  Julie;
-  Stephane;
-  Aude;
-  Stephane;
-  Pauline;
-  Nemo -> Manon;
-  Thiery -> Charlotte;
-  Iven -> Julie;
-  Louis -> Julie;
-  Stephane -> Aude;
-  Stephane -> Pauline;
+  Lucas;
+  Emma;
+  Alice;
+  Hugo;
+  Mathilde;
+  Ray;
+  Guillaume -> Rose;
+  Yves -> Ines;
+  Nemo -> Soukaina;
+  Lucas -> Emma;
+  Hugo -> Alice;
+  Ray -> Mathilde;
 }
