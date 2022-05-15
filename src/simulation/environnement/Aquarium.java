@@ -13,6 +13,15 @@ import java.util.*;
  */
 public class Aquarium {
 
+    PrintStream POPULATION;
+    PrintStream ESPECE_POPULATION_1;
+    PrintStream ESPECE_POPULATION_2;
+    PrintStream ESPECE_POPULATION_3;
+    PrintStream ESPECE_POPULATION_4;
+    PrintStream ESPECE_POPULATION_5;
+    PrintStream ESPECE_POPULATION_6;
+    static final String[] KNOWN_SPECIES = {"Carpe", "Bar", "Sole", "Thon", "Mérou", "Poisson-clown"};
+
     private final HashSet<SeaWeed> seaWeedSet;
     private final HashSet<Fish> fishSet;
     private int round = 0;
@@ -21,7 +30,20 @@ public class Aquarium {
     /**
      * Instantiates a new Aquarium.
      */
-    public Aquarium() {
+    public Aquarium(PrintStream FILE,
+                    PrintStream FILE_1,
+                    PrintStream FILE_2,
+                    PrintStream FILE_3,
+                    PrintStream FILE_4,
+                    PrintStream FILE_5,
+                    PrintStream FILE_6) {
+        POPULATION = FILE;
+        ESPECE_POPULATION_1 = FILE_1;
+        ESPECE_POPULATION_2 = FILE_2;
+        ESPECE_POPULATION_3 = FILE_3;
+        ESPECE_POPULATION_4 = FILE_4;
+        ESPECE_POPULATION_5 = FILE_5;
+        ESPECE_POPULATION_6 = FILE_6;
         this.seaWeedSet = new HashSet<>();
         this.fishSet = new HashSet<>();
         r = new Random();
@@ -158,7 +180,45 @@ public class Aquarium {
     public void spendTime() throws IOException {
 
         //HashMap<Fish, ArrayList> loveFish = new HashMap<>();
+        System.setOut(POPULATION);
         System.out.println(fishSet.size());
+
+        int n = 0;
+        System.setOut(ESPECE_POPULATION_1);
+        for (Fish fish : fishSet) {
+            if (fish.getSpecies().equals(KNOWN_SPECIES[0])) n++;
+        }
+        System.out.println(n);
+        n = 0;
+        System.setOut(ESPECE_POPULATION_2);
+        for (Fish fish : fishSet) {
+            if (fish.getSpecies().equals(KNOWN_SPECIES[1])) n++;
+        }
+        System.out.println(n);
+        n = 0;
+        System.setOut(ESPECE_POPULATION_3);
+        for (Fish fish : fishSet) {
+            if (fish.getSpecies().equals(KNOWN_SPECIES[2])) n++;
+        }
+        System.out.println(n);
+        n = 0;
+        System.setOut(ESPECE_POPULATION_4);
+        for (Fish fish : fishSet) {
+            if (fish.getSpecies().equals(KNOWN_SPECIES[3])) n++;
+        }
+        System.out.println(n);
+        n = 0;
+        System.setOut(ESPECE_POPULATION_5);
+        for (Fish fish : fishSet) {
+            if (fish.getSpecies().equals(KNOWN_SPECIES[4])) n++;
+        }
+        System.out.println(n);
+        n = 0;
+        System.setOut(ESPECE_POPULATION_6);
+        for (Fish fish : fishSet) {
+            if (fish.getSpecies().equals(KNOWN_SPECIES[5])) n++;
+        }
+        System.out.println(n);
 
         ArrayList<Fish> carpeLove = new ArrayList<>();
         ArrayList<Fish> barLove = new ArrayList<>();

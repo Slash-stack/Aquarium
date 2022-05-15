@@ -13,8 +13,8 @@ def plot(x, y):
     plt.plot(x,y,'.')
     plt.gca().xaxis.set_ticks(range(x[-1]))
     plt.xlabel("tour")
-    plt.ylabel("nombre de poissons dans l'aquarium")
-    plt.title("Evolution du banc de poisson")
+    plt.ylabel("nombre de Poisson-clown dans l'aquarium")
+    plt.title("Evolution du nombre de Poisson-clown")
     plt.show()
 
 
@@ -34,4 +34,4 @@ def parse_txt(filepath):
 
 
 if __name__ == '__main__':
-    plot(*parse_txt("../output/population.txt"))
+    plot(*parse_txt("../output/population6.txt"))
