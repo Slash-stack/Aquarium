@@ -15,7 +15,7 @@ Les algues (SeaWeed) :
 Les poissons (Fish) :
 - Perdent 1 HP à la fin de chaque tour;
 - Perdent 4 HP s'ils se font mordre par un autre poisson carnivore;
-- Doit manger s'il a suffisamment faim (5 HP ou moins). Les herbivores n'ont pas trop de problème, mais les algues ne sont pas très nourrissantes : +3 HP. Les carnivores mangent de la bonne viande de poisson, qui fait gagner +5 HP. Un carnivore attaque chaque tour un poisson au hasard : il n'a qu'une seule chance. Hélas pour lui, il ne peut ni se manger lui-même, ni manger un poisson de son espèce. Le tableau des régimes alimentaires selon l'espece est donné dans \ref{fig:regime}.
+- Doit manger s'il a suffisamment faim (5 HP ou moins). Les herbivores n'ont pas trop de problème, mais les algues ne sont pas très nourrissantes : +3 HP. Les carnivores mangent de la bonne viande de poisson, qui fait gagner +5 HP. Un carnivore attaque chaque tour un poisson au hasard : il n'a qu'une seule chance. Hélas pour lui, il ne peut ni se manger lui-même, ni manger un poisson de son espèce. Le tableau des régimes alimentaires selon l'espece est donné dans la figure 1.
 - Se reproduit selon certaines règles qui seront détaillées dans la section suivante.
 
 
@@ -50,7 +50,9 @@ Pour un aquarium avec une population de 12 poissons au tour 0 (un mâle et une f
 
 # TODO : ajouter les graphics
 
-On peut constater l'évolution suivante de la population :
+On peut constater l'évolution suivante de la population, ce qui est tout à fait logique compte tenu des hypothèses faites pour la simulation.
+En effet, en considérant un espace infini (pas de limite d'espace ni de resources), les poissons se reproduisent tout en mangeant soit les algues soit les autres poissons.
+
 
 <p align="center">
   <img src="figures/population.png" width="500" title="population">
